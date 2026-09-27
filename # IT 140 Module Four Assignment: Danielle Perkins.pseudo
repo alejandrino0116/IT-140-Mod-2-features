@@ -19,7 +19,7 @@ START hilow_game
     INPUT high_range
 
     #Repeat as needed until the bounds satisfy the requirement.
-    WHILE low_range >= high_range
+    WHILE low_range is higher than or equal to high_range
         PRINT "The low number must be less than the high number."
         PRINT "Choose the lowest number possible: "
         INPUT low_range
@@ -34,7 +34,7 @@ START hilow_game
     PRINT "Now guess a number between low_range and high_range: "
     INPUT guess
 
-    WHILE guess < low_range OR guess > high_range
+    WHILE guess is lower than low_range OR guess is higher than high_range
         PRINT "You must choose a number between low_range and high_range: "
         INPUT guess
     END WHILE
@@ -43,9 +43,9 @@ START hilow_game
     WHILE guess != magic_number
 
         #Compare a valid guess and provide the required feedback.
-        IF guess < magic_number THEN
+        IF guess is less than magic_number THEN
             PRINT "Too Low. Try again!"
-        ELSE IF guess > magic_number THEN
+        ELSE IF guess is higher than magic_number THEN
             PRINT "Too High. Try again!"
         END IF
 
@@ -53,7 +53,7 @@ START hilow_game
         PRINT "Guess again: "
         INPUT guess
 
-        WHILE guess < low_range OR guess > high_range
+        WHILE guess is less than low_range OR guess is greater than high_range
             PRINT "You must choose a number between low_range and high_range: "
             INPUT guess
         END WHILE
