@@ -15,7 +15,7 @@ START hilow_game
     # Establish a valid guessing range.
     PRINT "Choose the lowest number possible: "
     INPUT low_range
-    PRINT "Choose the hightest number possible: "
+    PRINT "Choose the highest number possible: "
     INPUT high_range
 
     #Repeat as needed until the bounds satisfy the requirement.
@@ -66,4 +66,6 @@ START hilow_game
 END hilow_game
 
 # === References ===
-# TODO: Add references for sources you used, or delete this line if unused.
+# Akash, D. (2026, September 27). IT 104 Mod 4 Hi Low Assignment [https://urldefense.com/v3/__http://lhh.tutor.com/Tools/PreviousSessionViewer/SessionDisplayer.aspx?Print=1&SessionGUID=6f964358-93c7-4f15-89ee-1cae7e4de59c__;!!BeImMA!7Q5wtk91Slb9pWkYtMKlDnNLhxom4RGc0voSgqBqR4JPkQJZKRzQAhuLXNPHMaoP2rab--6crNHldHCNsVaTfFfjGwBLeIE$]. https://lhh.tutor.com/snhu/presession
+# Google. (2026, September 27).  Formatting Check on Pseudocode [Genertive AI chat]. Gemini. google.com
+# Google. (2026, September 27).  How to cite tutoring services [Genertive AI chat]. Gemini. google.com
