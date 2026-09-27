@@ -1,0 +1,69 @@
+# IT 140 Module Four Assignment: Danielle Perkins
+# Higher/Lower Game Pseudocode Template
+#
+# Complete the TODO prompts below with your own pseudocode.
+# Keep this file in .pseudo format for submission.
+#
+# Use clear indentation to show decisions and repeated behavior.
+# Your finished pseudocode should address every requirement in the
+# current Module Four Assignment Guidelines and Rubric.
+
+START hilow_game
+
+    PRINT " Hello Bella! Welcome to the high/low game!!"
+
+    # Establish a valid guessing range.
+    PRINT "Choose the lowest number possible: "
+    INPUT low_range
+    PRINT "Choose the hightest number possible: "
+    INPUT high_range
+
+    #Repeat as needed until the bounds satisfy the requirement.
+    WHILE low_range >= high_range
+        PRINT "The low number must be less than the high number."
+        PRINT "Choose the lowest number possible: "
+        INPUT low_range
+        PRINT "Choose the highest number possible: "
+        INPUT high_range
+    END WHILE
+
+    # Establish the number the player is trying to guess.
+    SET magic_number = RANDOM number between low_range and high_range
+
+    # Play the game.
+    PRINT "Now guess a number between low_range and high_range: "
+    INPUT guess
+
+    WHILE guess < low_range OR guess > high_range
+        PRINT "You must choose a number between low_range and high_range: "
+        INPUT guess
+    END WHILE
+
+    #Repeat the required game behavior until the correct guess
+    WHILE guess != magic_number
+
+        #Compare a valid guess and provide the required feedback.
+        IF guess < magic_number THEN
+            PRINT "Too Low. Try again!"
+        ELSE IF guess > magic_number THEN
+            PRINT "Too High. Try again!"
+        END IF
+
+        #Obtain and validate another guess when play continues.
+        PRINT "Guess again: "
+        INPUT guess
+
+        WHILE guess < low_range OR guess > high_range
+            PRINT "You must choose a number between low_range and high_range: "
+            INPUT guess
+        END WHILE
+
+    END WHILE    
+
+    #Output when correct number is guessed
+    PRINT "Good Job. You got it!!"
+
+END hilow_game
+
+# === References ===
+# TODO: Add references for sources you used, or delete this line if unused.
