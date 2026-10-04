@@ -11,11 +11,24 @@ START get_item
 
     # TODO 1: Identify the information the get-item process needs.
     # Consider the current room, item in that room, and player's inventory.
+    SET player's requested item from the command line
+    SET current_room = item assigned to room
+    SET inventory list showing artifacts player's currently holds
 
     # TODO 2: Prompt for and receive the player's get-item command.
+    OUTPUT "You see a + artifact assigned to room"
+    INPUT user_input_string
+    SET item_command = item separated from user_input_string
 
     # TODO 3: Validate whether the requested item is available in the current
     # room. Show the decision clearly.
+    IF item_command already in inventory:
+        OUTPUT "Artifact already obtained."
+    ELSE:
+        IF item_command is not obtained and assigned to current_room:
+            OUTPUT "You see a + artifact assigned to room"
+        ELSE:
+        
 
     # TODO 4: Describe what happens when the item request is valid.
     # Include the inventory update and player output.
