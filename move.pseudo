@@ -1,0 +1,69 @@
+# Project One Move-Between-Rooms Pseudocode
+#
+# Graded checkpoint: Module Five Project One
+# Later use: conceptual support for M6; movement design for M7
+#
+# Review the course-provided movement flowchart before completing this file.
+# Write pseudocode, not Python code. Use clear indentation and course-appropriate
+# keywords such as INPUT, OUTPUT, IF, ELSE, WHILE, SET, or similar terms.
+
+# TODO 1: Identify the information the movement process needs.
+# Consider the player's current room and movement command.
+SET player_playing = TRUE
+SET current_room = player's active location (starting in the Grand Entrance Hall)
+SET  movement_command = get user's direction input
+SET castle_map = castle's layout containing all valid room connections
+
+# TODO 2: Prompt for and receive the player's movement command.
+OUTPUT "Which direction would you like to go?"
+INPUT user_input_string
+SET movement_command = separate direction from user_input_string
+
+# TODO 3: Validate whether the requested movement is possible from the
+# current room. Show the decision clearly.
+IF movement_command is a valid direction from the current_room in the castle_map: 
+
+# TODO 4: Describe what happens when the movement command is valid.
+# Include the room update and player output.
+  SET current_room = new room
+  OUTPUT "Phew, still alive! You are now in the + current_room."
+
+# TODO 5: Describe what happens when the movement command is invalid.
+# Include the output the player should receive.
+ELSE:
+  OUTPUT "You can't go that way!"
+  OUTPUT "Which direction would you like to go?"
+    
+RETURN current_room
+
+# TODO 6: Show how movement fits into repeated gameplay.
+# The final game continues accepting commands until a required ending occurs.
+OUTPUT "Welcome to your final resting place in Surviving Dracula."
+OUTPUT "To move rooms, type: go North, go East, go South, go West."
+
+WHILE player_playing = TRUE
+  OUTPUT "Which direction would you like to go?"
+  INPUT user_input_string
+  SET movement_command = separate direction from user_input_string
+
+  IF movement_command is a valid direction from the current_room in the castle_map:
+    SET current_room == new room
+    OUTPUT ""Phew, still alive! You are now in the + current_room."
+  ELSE:
+    OUTPUT "You can't go that way!"
+    OUTPUT "Which direction would you like to go?"
+    
+  IF current_room == "Conservatory":
+    SET player_playing = FALSE
+
+    IF items_collected == 6:
+      OUTPUT "With the help of your protective artifacts, you have defeated Dracula!"
+    ELSE:
+      OUTPUT "I'm going to suck your blood!" 
+      OUTPUT "Oh no. You have become Dracula's newest victim."
+      OUTPUT "GAME OVER"
+
+END WHILE
+
+# === References ===
+# Google. (2026, October 4).  Formatting Check on Pseudocode [Genertive AI chat]. Gemini. google.com
