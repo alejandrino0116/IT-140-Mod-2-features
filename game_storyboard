@@ -7,58 +7,63 @@
 
 **Theme:**
 
-TODO: Name and briefly describe your game's theme.
+Surviving Dracula: A text-based Gothic Horror Survival Game
 
 **Storyline:**
 
-TODO: In one short paragraph, explain the setting, the player's goal, the items
-the player must gather, and the threat created by the villain.
+The game takes place inside a treacherous, haunted castle known as Dracula's 
+Lair. The player suddenly gains consciousness and realizes they've been kidnapped 
+and are in the Grand Entrance Hall of Dracula's dreaded castle. The player must locate 
+and collect six hidden protective artifacts: the Sacred Bread, Garlic, Mirror, Cross, 
+Holy Water, and a Torch safely before Dracula finds them and they becomes his next 
+victim. Dracula lies in wait within the castle's Conservatory room waiting to make the 
+player his dinner. The player must successfully secure all six defensive items before 
+crossing the threshold into the Conservatory. Doing so without all six items will result 
+in the player being overpowered by Dracula and becoming Dracula's dinner. Game over.   
 
 ## Rooms
 
 Project One requires a minimum of eight rooms.
 
-1. TODO: Start room
-2. TODO: Room
-3. TODO: Room
-4. TODO: Room
-5. TODO: Room
-6. TODO: Room
-7. TODO: Room
-8. TODO: Villain room
-
-Add more rooms if your design needs them.
+1. Grand Entrance Hall: Start room
+2. Dining Hall 
+3. Kitchen
+4. Bedchamber
+5. Crypt
+6. Ruined Chapel
+7. Tower
+8. Conservatory: Villain room
 
 ## Items
 
 With the minimum eight-room design, Project One requires at least six items.
 Every room except the start room and villain room must contain one item.
 
-1. TODO: Item
-2. TODO: Item
-3. TODO: Item
-4. TODO: Item
-5. TODO: Item
-6. TODO: Item
-
-If you add rooms beyond the minimum, add an item for every additional room
-except the start room and villain room.
+1. Sacred Bread
+2. Garlic
+3. Mirror
+4. Cross
+5. Holy Water
+6. Torch
 
 ## Villain
 
-TODO: Identify and briefly describe the villain.
+Count Dracula is an ancient, bloodthirsty vampire whose sole motivation is to make the 
+kidnapped player his next victim. Dracula possesses sharp fangs, a terrifying hypnotic 
+gaze, and deadly superhuman strength. Only possessing all six of the protective artifacts 
+together can defeat him. 
 
 ## Storyboard and Map Check
 
 Before submitting, compare this storyboard with `game_map.drawio`.
 
-* [ ] I included eight (8) rooms.
-* [ ] I included six (6) collectable items.
-* [ ] The start room has no item.
-* [ ] The villain room has no item.
-* [ ] Every room except the start room and villain room contains one item.
-* [ ] Room, item, and villain names match my map.
-* [ ] The map allows the player to collect all required items before the
+* [X] I included eight (8) rooms.
+* [X] I included six (6) collectable items.
+* [X] The start room has no item.
+* [X] The villain room has no item.
+* [X] Every room except the start room and villain room contains one item.
+* [X] Room, item, and villain names match my map.
+* [X] The map allows the player to collect all required items before the
   villain is encountered.
 
 ## Project Two Handoff
