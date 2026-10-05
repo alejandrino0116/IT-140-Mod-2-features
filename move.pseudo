@@ -65,5 +65,5 @@ WHILE player_playing == TRUE
 
 END WHILE
 
-# === References ===
+# References
 # Google. (2026, October 4).  Formatting Check on Pseudocode [Genertive AI chat]. Gemini. google.com
