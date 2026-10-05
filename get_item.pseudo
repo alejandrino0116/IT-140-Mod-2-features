@@ -11,12 +11,13 @@ START get_item
 
     # TODO 1: Identify the information the get-item process needs.
     # Consider the current room, item in that room, and player's inventory.
-    SET player's requested item from the command line
-    SET current_room = item assigned to room
+    SET item_command = the player's requested artifact
+    SET current_room = player's active location
+    SET castle_map = castle's layout containing all valid room items
     SET inventory list showing artifacts player's currently holds
 
     # TODO 2: Prompt for and receive the player's get-item command.
-    OUTPUT "You see a + artifact assigned to room"
+    OUTPUT "The artifact " + room_item + " is in this chamber."
     INPUT user_input_string
     SET item_command = item separated from user_input_string
 
@@ -34,7 +35,7 @@ START get_item
     # Include the inventory update and player output.
     APPEND item_command to inventory list
     REMOVE item_command from current_room inside castle_map
-    OUTPUT "You are now protected by " + item_command".  
+    OUTPUT "You are now protected by " + item_command.  
 
     # TODO 5: Describe what happens when the item request is invalid.
     # Include the output the player should receive.
@@ -50,5 +51,5 @@ START get_item
         
 END get_item
 
-
 # References
+# Google. (2026, October 4).  Formatting Check on Pseudocode [Genertive AI chat]. Gemini. google.com
