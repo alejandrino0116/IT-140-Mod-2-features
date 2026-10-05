@@ -22,23 +22,32 @@ START get_item
 
     # TODO 3: Validate whether the requested item is available in the current
     # room. Show the decision clearly.
-    IF item_command already in inventory:
-        OUTPUT "Artifact already obtained."
+    IF item_command is already in inventory:
+        # OUTPUT in prompt 5 
     ELSE:
-        IF item_command is not obtained and assigned to current_room:
-            OUTPUT "You see a + artifact assigned to room"
+        IF item_command is assigned to current_room:
+            # OUTPUT in prompt 4
         ELSE:
-        
+            # OUTPUT in prompt 5
 
     # TODO 4: Describe what happens when the item request is valid.
     # Include the inventory update and player output.
+    APPEND item_command to inventory list
+    REMOVE item_command from current_room inside castle_map
+    OUTPUT "You are now protected by " + item_command".  
 
     # TODO 5: Describe what happens when the item request is invalid.
     # Include the output the player should receive.
+    IF item_command is already in player's inventory list:
+        OUTPUT "That artifact already protects you."
+
+    IF item_command is not assigned to to current_room:
+        OUTPUT "That artifact isn't in this chamber."
 
     # TODO 6: Show how the process returns to or continues the larger gameplay
     # loop after the command is handled.
-
+    RETURN inventory to the main game loop. 
+        
 END get_item
 
 
